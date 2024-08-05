@@ -9,3 +9,12 @@ def natalia_view(request):
                       'nome': nome
                   }
                   )
+
+def mikarlla_view(request):
+    nome = 'Mikarlla Souza'
+
+    return render(request, 'exercicio/mikarlla.html',
+                  context={
+                      'nome': nome
+                  }
+                  )
