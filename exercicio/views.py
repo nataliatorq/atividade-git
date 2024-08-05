@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def natalia_view(request):
+    nome = 'Natalia Torquato'
+
+    return render(request, 'exercicio/natalia.html',
+                  context={
+                      'nome': nome
+                  }
+                  )
